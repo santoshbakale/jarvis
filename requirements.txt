@@ -1,0 +1,11 @@
+openai
+rich
+typer
+python-dotenv
+SpeechRecognition
+pyttsx3
+pydantic-settings
+langchain
+langchain_openai
+chromadb
+pyaudio

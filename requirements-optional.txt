@@ -1,0 +1,10 @@
+# Voice-specific dependencies (optional)
+# These are required only for voice mode
+SpeechRecognition
+pyttsx3
+pyaudio
+
+# Advanced memory features (optional)
+langchain
+langchain_openai
+chromadb
