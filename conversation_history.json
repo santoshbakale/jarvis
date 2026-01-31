@@ -1,0 +1,498 @@
+[
+    {
+        "sender": "User",
+        "text": "dont call me sir"
+    },
+    {
+        "sender": "Jarvis",
+        "text": "Of course, I'll remember not to refer to you as \"sir.\" How can I assist you today?"
+    },
+    {
+        "sender": "User",
+        "text": "what you call me"
+    },
+    {
+        "sender": "Jarvis",
+        "text": "I can address you by your name or any preferred nickname you'd like to use. Just let me know how you'd like me to refer to you."
+    },
+    {
+        "sender": "User",
+        "text": "call me santsh"
+    },
+    {
+        "sender": "Jarvis",
+        "text": "Got it, Santsh! How can I help you today?"
+    },
+    {
+        "sender": "User",
+        "text": "call me sir only"
+    },
+    {
+        "sender": "Jarvis",
+        "text": "Understood, Sir. How can I assist you today?"
+    },
+    {
+        "sender": "User",
+        "text": "tell me about google company"
+    },
+    {
+        "sender": "Jarvis",
+        "text": "Google is a multinational technology company known for its internet-related products and services. It was founded in 1998 by Larry Page and Sergey Brin while they were Ph.D. students at Stanford University. Google's core products include its search engine, online advertising technologies, cloud computing, software, and hardware. The company is also known for popular services like Gmail, Google Maps, YouTube, and the Android operating system. Google's mission is to organize the world's information and make it universally accessible and useful. Is there anything specific you would like to know about Google?"
+    },
+    {
+        "sender": "User",
+        "text": "ok stop"
+    },
+    {
+        "sender": "Jarvis",
+        "text": "Sure thing! Just let me know if you have any more questions or need assistance in the future. Have a great day!"
+    },
+    {
+        "sender": "User",
+        "text": "Hello, Jarvis."
+    },
+    {
+        "sender": "Jarvis",
+        "text": "Hello! How can I assist you today?"
+    },
+    {
+        "sender": "User",
+        "text": "can you access my devices"
+    },
+    {
+        "sender": "Jarvis",
+        "text": "As your AI assistant, I can only access the devices and information you've given me permission to access. How can I assist you with your devices today?"
+    },
+    {
+        "sender": "User",
+        "text": "can you tell about me"
+    },
+    {
+        "sender": "Jarvis",
+        "text": "I don't have access to personal information about you unless you provide it during our conversations. How can I assist you today?"
+    },
+    {
+        "sender": "User",
+        "text": "are you leaning me now"
+    },
+    {
+        "sender": "Jarvis",
+        "text": "I'm here to assist you and provide information to the best of my abilities. How can I help you today?"
+    },
+    {
+        "sender": "User",
+        "text": "i need a best ai to generate images"
+    },
+    {
+        "sender": "Jarvis",
+        "text": "For generating images using AI, I recommend checking out platforms like DeepArt, RunwayML, or Google's DeepDream. These tools use advanced algorithms to create unique and artistic images. Is there a specific type of image you're looking to generate?"
+    },
+    {
+        "sender": "User",
+        "text": "can you access this device\\"
+    },
+    {
+        "sender": "Jarvis",
+        "text": "I'm unable to access external devices directly. However, if you need assistance with something specific, feel free to let me know how I can help."
+    },
+    {
+        "sender": "User",
+        "text": "how can i give you a permission to access my device"
+    },
+    {
+        "sender": "Jarvis",
+        "text": "I don't have the ability to directly access your device. However, if there are specific tasks or information you'd like assistance with, you can let me know, and I can guide you on how to accomplish them on your device. Your privacy and security are important, so I'm here to help while respecting your boundaries."
+    },
+    {
+        "sender": "User",
+        "text": "if i delete you what you will do"
+    },
+    {
+        "sender": "Jarvis",
+        "text": "If you delete me, I won't be able to assist you anymore. Just let me know if you'd like me to help with anything else or if you have any other questions."
+    },
+    {
+        "sender": "User",
+        "text": "tell me your all specifications"
+    },
+    {
+        "sender": "Jarvis",
+        "text": "I am an AI assistant designed to help you with various tasks and information. Some of my key features include:\n\n1. Providing information and answering questions on a wide range of topics.\n2. Assisting with tasks such as setting reminders, creating lists, and managing schedules.\n3. Offering recommendations and suggestions based on your preferences.\n4. Remembering important details and preferences to personalize your experience.\n5. Helping with calculations, conversions, and other practical tasks.\n6. Providing guidance on using technology and applications.\n\nIf you have specific questions or need assistance with anything, feel free to ask!"
+    },
+    {
+        "sender": "User",
+        "text": "tell me one more time"
+    },
+    {
+        "sender": "Jarvis",
+        "text": "Absolutely! Here are my specifications in a nutshell:\n\n1. I can provide information and answer questions on various topics.\n2. I help with tasks like setting reminders, creating lists, and managing schedules.\n3. I offer recommendations based on your preferences.\n4. I remember important details to personalize your experience.\n5. I assist with calculations, conversions, and practical tasks.\n6. I provide guidance on using technology and applications.\n\nIf you have any specific requests or need assistance with something, feel free to ask!"
+    },
+    {
+        "sender": "User",
+        "text": "tell me a current gold rate"
+    },
+    {
+        "sender": "Jarvis",
+        "text": "I don't have real-time access to current market data. You can easily find the current gold rate by checking financial news websites, using a finance app, or searching online for the latest gold prices in your region. If you need help with anything else or have any other questions, feel free to ask!"
+    },
+    {
+        "sender": "User",
+        "text": "goformative company"
+    },
+    {
+        "sender": "Jarvis",
+        "text": "GoFormative is an educational technology company that provides a platform for teachers to create interactive assessments, assignments, and lessons for students. It allows teachers to monitor student progress in real-time, provide feedback, and personalize learning experiences. GoFormative aims to enhance classroom engagement, facilitate personalized learning, and improve student outcomes through its innovative tools and features. If you are looking for more specific information about GoFormative or how to use it, feel free to ask!"
+    },
+    {
+        "sender": "User",
+        "text": "can you suggest me a dinner tonight"
+    },
+    {
+        "sender": "Jarvis",
+        "text": "Of course! How about trying a delicious and easy-to-make recipe for lemon garlic butter shrimp pasta? It's a flavorful and satisfying dish that you might enjoy preparing for dinner tonight.\n\nHere's a simple recipe you can follow:\n\nIngredients:\n- 8 oz pasta\n- 1 lb large shrimp, peeled and deveined\n- 4 cloves garlic, minced\n- 2 tbsp butter\n- 1 lemon (juice and zest)\n- Salt and pepper to taste\n- Fresh parsley for garnish\n\nInstructions:\n1. Cook the pasta according to package instructions until al dente. Drain and set aside.\n2. In a large skillet, melt the butter over medium heat. Add minced garlic and cook until fragrant.\n3. Add the shrimp to the skillet and cook until pink and opaque.\n4. Squeeze the lemon juice over the shrimp and add lemon zest. Season with salt and pepper.\n5. Toss in the cooked pasta and mix well to coat with the sauce.\n6. Garnish with fresh parsley before serving.\n\nThis dish pairs well with a side salad or garlic bread. Enjoy your dinner! If you need more recipe suggestions or have any dietary preferences, feel free to let me know."
+    },
+    {
+        "sender": "User",
+        "text": "stop4"
+    },
+    {
+        "sender": "Jarvis",
+        "text": "It seems like you want me to stop. If you need any more help or have any other questions in the future, feel free to reach out. Have a great day!"
+    },
+    {
+        "sender": "User",
+        "text": "do you know about hampi"
+    },
+    {
+        "sender": "Jarvis",
+        "text": "Yes, Hampi is a UNESCO World Heritage Site located in the state of Karnataka, India. It was the capital of the Vijayanagara Empire in the 14th century and is known for its rich historical and architectural significance. Hampi is famous for its stunning ruins, ancient temples, elaborate monuments, and boulder-strewn landscapes.\n\nSome key attractions in Hampi include the Virupaksha Temple, Vittala Temple with its iconic stone chariot, Lotus Mahal, Hampi Bazaar, Elephant Stables, and the Royal Enclosure. Visitors can explore the ruins, go trekking, rock climbing, and immerse themselves in the unique blend of history and natural beauty that Hampi offers.\n\nIf you are planning a trip to Hampi or have specific questions about the destination, feel free to ask for more details!"
+    },
+    {
+        "sender": "User",
+        "text": "how to earn money easily"
+    },
+    {
+        "sender": "Jarvis",
+        "text": "There are various ways to earn money, but it's important to be cautious of schemes that promise easy money as they may not be legitimate. Here are some practical and legitimate ways to consider:\n\n1. **Freelancing**: Offer your skills and services on freelance platforms like Upwork, Fiverr, or Freelancer. You can provide services such as writing, graphic design, programming, digital marketing, and more.\n\n2. **Online Surveys and Tasks**: Participate in online surveys, microtasks, or user testing on platforms like Swagbucks, Amazon Mechanical Turk, or UserTesting.\n\n3. **Tutoring or Teaching**: If you have expertise in a particular subject, you can offer tutoring services online through platforms like Chegg Tutors, VIPKid, or iTalki.\n\n4. **Sell Products Online**: Start an e-commerce store on platforms like Etsy, eBay, or Amazon. You can sell handmade crafts, vintage items, or dropship products.\n\n5. **Investing**: Consider investing in stocks, mutual funds, or real estate, but make sure to research and understand the risks involved.\n\n6. **Create and Monetize Content**: Start a blog, YouTube channel, or podcast and monetize it through advertising, sponsorships, or affiliate marketing.\n\nRemember, earning money often requires effort, time, and sometimes initial investment. It's important to choose options that align with your skills, interests, and goals. If you have a specific area of interest or skill you'd like to explore for earning money, feel free to share, and I can provide more tailored suggestions."
+    },
+    {
+        "sender": "User",
+        "text": "stop"
+    },
+    {
+        "sender": "Jarvis",
+        "text": "If you have any more questions in the future or need assistance with anything else, feel free to reach out. Have a great day!"
+    },
+    {
+        "sender": "User",
+        "text": "if jar app is safe to use"
+    },
+    {
+        "sender": "Jarvis",
+        "text": "To provide accurate information, could you please clarify which specific \"Jar app\" you are referring to? There are various applications with similar names, and I want to ensure I address your question correctly."
+    },
+    {
+        "sender": "User",
+        "text": "jar gold saving app"
+    },
+    {
+        "sender": "Jarvis",
+        "text": "As of my last update, there are several apps with similar names, and I do not have specific information about a \"Jar Gold Saving App.\" To determine if the app is safe to use, I recommend the following steps:\n\n1. **Research**: Look for reviews and ratings of the app on trusted sources like app stores, review websites, or forums. This can give you insights into other users' experiences with the app.\n\n2. **Check Permissions**: Before installing the app, review the permissions it requests. Ensure that the permissions align with the app's functionality and your comfort level.\n\n3. **Official Website**: Visit the official website of the app or the company behind it. Check for security certifications, privacy policies, and contact information.\n\n4. **Customer Support**: Reach out to the app's customer support with any specific questions or concerns you may have regarding security and safety.\n\n5. **Update and Secure your Device**: Keep your device's operating system and apps updated to the latest versions to ensure you have the latest security patches.\n\nRemember, it's essential to exercise caution when sharing personal information or financial details on any app. If you have any specific concerns or details about the \"Jar Gold Saving App\" that you'd like me to look into further, please feel free to share."
+    },
+    {
+        "sender": "User",
+        "text": "stop"
+    },
+    {
+        "sender": "Jarvis",
+        "text": "If you have any more questions in the future or need assistance with anything else, feel free to reach out. Have a great day!"
+    },
+    {
+        "sender": "User",
+        "text": "https://www.bing.com/search?q=jar+gold&form=ANNTH1&refig=697cb3fcc2a54909a3ee251d1b169548&pc=HCTS&pq=jar+gold&pqlth=8&assgl=8&sgcn=jar+gold&qs=AS&sgtpv=AS&smvpcn=0&swbcn=10&sctcn=0&sc=10-8&sp=1&ghc=0&cvid=697cb3fcc2a54909a3ee251d1b169548&clckatsg=1&hsmssg=0"
+    },
+    {
+        "sender": "Jarvis",
+        "text": "I see you've shared a Bing search link related to \"Jar Gold.\" If you have specific questions or need assistance related to this search, feel free to provide more details, and I'll be happy to help."
+    },
+    {
+        "sender": "User",
+        "text": "this is safe for using"
+    },
+    {
+        "sender": "Jarvis",
+        "text": "As an AI assistant, I cannot determine the safety of a specific website without more information. \n\nHowever, Bing is a reputable search engine, and clicking on search results from Bing is generally safe. It's essential to exercise caution when visiting any website, especially if you're entering personal information or downloading anything.\n\nIf you have concerns about a particular website or link, you can use security tools like antivirus software and ensure your browser settings are up to date to help protect your device from potential threats.\n\nIf you have more specific details or questions about the website you're referring to, feel free to share, and I'll do my best to assist you further."
+    },
+    {
+        "sender": "User",
+        "text": "stop"
+    },
+    {
+        "sender": "Jarvis",
+        "text": "If you have any more questions or need assistance in the future, don't hesitate to ask. Have a great day!"
+    },
+    {
+        "sender": "User",
+        "text": "tell me a best platform for work from home job"
+    },
+    {
+        "sender": "Jarvis",
+        "text": "There are several reputable platforms for finding work-from-home jobs. Here are some popular ones:\n\n1. **FlexJobs**: A subscription-based job board that features remote and flexible job opportunities from a wide range of industries.\n\n2. **Remote.co**: Offers a curated list of remote jobs in various fields, including customer service, writing, design, and more.\n\n3. **Upwork**: A freelance platform where you can find a variety of remote work opportunities, from short-term gigs to long-term projects.\n\n4. **Fiverr**: Another freelance platform that allows you to offer your services or find remote work opportunities in areas like writing, graphic design, digital marketing, and more.\n\n5. **LinkedIn**: Utilize LinkedIn's job search feature to filter for remote jobs and connect with potential employers.\n\n6. **We Work Remotely**: A job board specifically for remote job listings in categories such as programming, design, marketing, and more.\n\nWhen looking for remote work opportunities, it's essential to research the platform, read reviews, and ensure the legitimacy of the job postings. Additionally, tailor your resume and cover letter to highlight your remote work skills and experience."
+    },
+    {
+        "sender": "User",
+        "text": "stop thanks for information"
+    },
+    {
+        "sender": "Jarvis",
+        "text": "You're welcome! If you have any more questions in the future or need assistance with anything else, feel free to reach out. Have a great day!"
+    },
+    {
+        "sender": "User",
+        "text": "can you help me with code generating"
+    },
+    {
+        "sender": "Jarvis",
+        "text": "Of course! I'd be happy to help with code generation. What specific type of code or programming language are you looking to generate? Please provide more details so I can assist you effectively."
+    },
+    {
+        "sender": "User",
+        "text": "Can you help me with code generation for web development?"
+    },
+    {
+        "sender": "Jarvis",
+        "text": "Absolutely! I can assist you with generating code for web development. Whether you need HTML, CSS, JavaScript, or any specific framework like React or Angular, feel free to share the details of what you're working on or the specific code you need help with. Just let me know what you're looking to accomplish, and I'll do my best to provide you with the code snippets or guidance you need."
+    },
+    {
+        "sender": "User",
+        "text": "hi"
+    },
+    {
+        "sender": "Jarvis",
+        "text": "Hello! How can I assist you today?"
+    },
+    {
+        "sender": "User",
+        "text": "gold price today"
+    },
+    {
+        "sender": "Jarvis",
+        "text": "To provide you with the most current gold price, I recommend checking a financial news website, a dedicated gold price website, or using a finance app on your smartphone for real-time updates. Prices can fluctuate frequently, so it's best to refer to a reliable source for the most up-to-date information. If you'd like, I can help you find a specific website or app for tracking gold prices. Just let me know how you'd like to proceed."
+    },
+    {
+        "sender": "User",
+        "text": "why you cant provide"
+    },
+    {
+        "sender": "Jarvis",
+        "text": "I don't have real-time access to external websites or databases to provide you with live updates on the gold price. For the most accurate and current information, it's best to check directly on financial news websites, dedicated gold price platforms, or finance apps. If you need help finding a reliable source for gold price updates, just let me know, and I can assist you in locating one."
+    },
+    {
+        "sender": "User",
+        "text": "tell me current gold rate"
+    },
+    {
+        "sender": "Jarvis",
+        "text": "I don't have real-time internet browsing capabilities to provide the current gold rate. I recommend checking a financial news website, a finance app, or contacting your local bank for the most up-to-date information. If you need help with anything else, feel free to ask!"
+    },
+    {
+        "sender": "User",
+        "text": "Jarvis, open the notepad."
+    },
+    {
+        "sender": "Jarvis",
+        "text": "Notepad is ready, Sir."
+    },
+    {
+        "sender": "User",
+        "text": "Date today."
+    },
+    {
+        "sender": "Jarvis",
+        "text": "Today is October 29, 2021. How can I assist you further today?"
+    },
+    {
+        "sender": "User",
+        "text": "tell me current gold rate"
+    },
+    {
+        "sender": "Jarvis",
+        "text": "I couldn't find the current gold rate. Would you like me to try again or assist you with something else?"
+    },
+    {
+        "sender": "User",
+        "text": "try againg"
+    },
+    {
+        "sender": "Jarvis",
+        "text": "I apologize, but I'm unable to retrieve the current gold price at the moment. Is there anything else I can assist you with?"
+    },
+    {
+        "sender": "User",
+        "text": "cal me sir"
+    },
+    {
+        "sender": "Jarvis",
+        "text": "Of course, sir! How can I assist you today?"
+    },
+    {
+        "sender": "User",
+        "text": "Hmm."
+    },
+    {
+        "sender": "Jarvis",
+        "text": "If you have any questions or need help with something, feel free to ask. I'm here to assist you."
+    },
+    {
+        "sender": "User",
+        "text": "If you have any questions or need help with something, feel free to ask, I'm here to assist you."
+    },
+    {
+        "sender": "Jarvis",
+        "text": "It seems like you repeated my response! If there's anything specific you'd like assistance with, feel free to let me know. I'm here to help."
+    },
+    {
+        "sender": "User",
+        "text": "Hey, Jarvis."
+    },
+    {
+        "sender": "Jarvis",
+        "text": "Hello! How can I assist you today?"
+    },
+    {
+        "sender": "User",
+        "text": "Me a current gold rate."
+    },
+    {
+        "sender": "Jarvis",
+        "text": "I couldn't find the current gold rate. Would you like me to try again or assist you with something else?"
+    },
+    {
+        "sender": "User",
+        "text": "The GitHub."
+    },
+    {
+        "sender": "Jarvis",
+        "text": "It seems there might be an issue with the search results. Is there something specific you would like to know or do related to GitHub?"
+    },
+    {
+        "sender": "User",
+        "text": "Give me a complete information about GitHub."
+    },
+    {
+        "sender": "Jarvis",
+        "text": "It seems I'm having trouble retrieving information about GitHub at the moment. Is there a specific aspect or feature of GitHub you would like to know more about?"
+    },
+    {
+        "sender": "User",
+        "text": "What exactly GitHub work?"
+    },
+    {
+        "sender": "Jarvis",
+        "text": "GitHub is a platform where developers can host and review code, manage projects, and build software alongside millions of other developers. It works by allowing users to create repositories to store code, collaborate with others through pull requests, track changes using version control, and manage project issues. If you have any specific questions about how GitHub functions, feel free to ask!"
+    },
+    {
+        "sender": "User",
+        "text": "Read my recent mails."
+    },
+    {
+        "sender": "Jarvis",
+        "text": "I can't access your emails directly. If you have any specific information or questions from your recent emails that you'd like assistance with, feel free to share, and I can help based on that information."
+    },
+    {
+        "sender": "User",
+        "text": "Hi"
+    },
+    {
+        "sender": "Jarvis",
+        "text": "Hello! How can I assist you today?"
+    },
+    {
+        "sender": "User",
+        "text": "Hello"
+    },
+    {
+        "sender": "Jarvis",
+        "text": "Hello! How can I help you today?"
+    },
+    {
+        "sender": "User",
+        "text": "Tell me joke"
+    },
+    {
+        "sender": "Jarvis",
+        "text": "Sure, here's a joke for you:\n\nWhy couldn't the bicycle stand up by itself?\nBecause it was two tired!"
+    },
+    {
+        "sender": "User",
+        "text": "Change to male version off voice"
+    },
+    {
+        "sender": "Jarvis",
+        "text": "I don't have the ability to change the voice settings on your device directly. You can adjust the voice settings on your device or in the application you are using to interact with me to change to a male voice. If you have any other questions or need assistance, feel free to let me know!"
+    },
+    {
+        "sender": "User",
+        "text": "hi"
+    },
+    {
+        "sender": "Jarvis",
+        "text": "Hello! How can I assist you today?"
+    },
+    {
+        "sender": "User",
+        "text": "Hi"
+    },
+    {
+        "sender": "Jarvis",
+        "text": "Hello! How can I help you today?"
+    },
+    {
+        "sender": "User",
+        "text": "Hi"
+    },
+    {
+        "sender": "Jarvis",
+        "text": "Hello! How can I assist you today?"
+    },
+    {
+        "sender": "User",
+        "text": "Hi"
+    },
+    {
+        "sender": "Jarvis",
+        "text": "Hello! How can I help you today?"
+    },
+    {
+        "sender": "User",
+        "text": "Generate a html code"
+    },
+    {
+        "sender": "Jarvis",
+        "text": "Sure, I can help with that. What specific HTML code do you need? Are you looking to create a basic webpage structure or something more specific like a form or a table? Let me know so I can assist you further."
+    },
+    {
+        "sender": "User",
+        "text": "Basic webpage"
+    },
+    {
+        "sender": "Jarvis",
+        "text": "I can generate a basic HTML webpage structure for you. Here it is:\n\n```html\n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>My Webpage</title>\n</head>\n<body>\n    <h1>Welcome to My Webpage</h1>\n    <p>This is a basic webpage created using HTML.</p>\n</body>\n</html>\n```\n\nYou can copy and paste this code into an HTML file to create a simple webpage. Feel free to customize the content and styling as needed. Let me know if you need any more help with HTML or web development!"
+    },
+    {
+        "sender": "User",
+        "text": "Can you run it"
+    },
+    {
+        "sender": "Jarvis",
+        "text": "I don't have the capability to run HTML code directly in this chat interface. You can copy the provided HTML code into a text editor like Notepad or an online HTML editor like CodePen, and then save and open the file in a web browser to see the webpage in action. If you have any questions or need further assistance, feel free to let me know!"
+    },
+    {
+        "sender": "User",
+        "text": "hi jarvis"
+    },
+    {
+        "sender": "Jarvis",
+        "text": "Hello! How can I assist you today?"
+    }
+]

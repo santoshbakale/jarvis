@@ -9,11 +9,13 @@ from rich.console import Console
 from rich.panel import Panel
 from rich.prompt import Prompt
 from typing import Optional
+import webbrowser
+import pygetwindow as gw
 
 from config import settings
 from brain import Brain
 from memory import Memory
-from skills import TimeSkill, CalculatorSkill
+from skills import TimeSkill, CalculatorSkill, WebSearchSkill, GoogleSearchSkill
 
 # Try to import voice modules, but allow running without them
 try:
@@ -45,17 +47,19 @@ class Jarvis:
         self.brain = Brain()
         self.memory = Memory()
         self.voice = Voice(settings.VOICE_ID) if VOICE_AVAILABLE and voice_mode else None
-        self.ears = Ears() if VOICE_AVAILABLE and voice_mode else None
+        self.ears = Ears(device_index=settings.MIC_INDEX) if VOICE_AVAILABLE and voice_mode else None
         
         # Load skills
         self.skills = {
             "time": TimeSkill(),
-            "calculator": CalculatorSkill()
+            "calculator": CalculatorSkill(),
+            "web_search": WebSearchSkill(),
+            "google_search": GoogleSearchSkill()
         }
         
     def respond(self, text: str):
         """Generate and deliver a response."""
-        response = self.brain.think(text)
+        response = self.brain.think(text, skills=self.skills)
         
         if self.voice_mode:
             self.voice.speak(response)
@@ -140,6 +144,12 @@ class Jarvis:
     
     def run_voice_mode(self):
         """Run in voice interaction mode."""
+        if not self.ears or not self.ears.available:
+            console.print("[yellow]Voice input (microphone) is not available.[/yellow]")
+            console.print("[yellow]Falling back to Text Input + Voice Output mode.[/yellow]")
+            self.run_hybrid_mode()
+            return
+
         console.print(Panel.fit(
             "[bold cyan]Jarvis AI Assistant[/bold cyan]\n"
             f"Voice Mode - Say '{settings.WAKE_WORD}' to activate\n"
@@ -147,12 +157,38 @@ class Jarvis:
             border_style="cyan"
         ))
         
+        self.ears.calibrate()
+        
         while True:
             try:
                 # Listen for wake word
-                if self.ears.listen_for_wake_word(settings.WAKE_WORD):
-                    # Wake word detected, now listen for command
-                    user_input = self.ears.listen(timeout=10)
+                wake_result = self.ears.listen_for_wake_word(settings.WAKE_WORD)
+                
+                if wake_result:
+                    # Summon Protocol: Force HUD to front
+                    try:
+                        hud_windows = [w for w in gw.getWindowsWithTitle('JARVIS') if 'Virtual Assistant' in w.title or 'localhost' in w.title]
+                        if hud_windows:
+                            # If minimized, restore it
+                            if hud_windows[0].isMinimized:
+                                hud_windows[0].restore()
+                            hud_windows[0].activate()
+                        else:
+                            webbrowser.open("http://localhost:8000")
+                    except Exception as e:
+                        # Fallback to simple open if anything fails
+                        webbrowser.open("http://localhost:8000")
+                    
+                    user_input = None
+                    
+                    if wake_result == "WAKE_WORD_ONLY":
+                        # Only wake word was heard, prompt for command
+                        if self.voice_mode:
+                            self.voice.speak("How can I help?")
+                        user_input = self.ears.listen(timeout=10)
+                    else:
+                        # Command was already in the same breath
+                        user_input = wake_result
                     
                     if user_input:
                         console.print(f"[bold green]You:[/bold green] {user_input}")
@@ -167,6 +203,34 @@ class Jarvis:
             except KeyboardInterrupt:
                 console.print("\n[yellow]Shutting down...[/yellow]")
                 break
+            except Exception as e:
+                console.print(f"[red]Error: {e}[/red]")
+
+    def run_hybrid_mode(self):
+        """Run with text input and voice output."""
+        console.print(Panel.fit(
+            "[bold cyan]Jarvis AI Assistant[/bold cyan]\n"
+            "Hybrid Mode - Type your messages below\n"
+            "Jarvis will respond with voice",
+            border_style="cyan"
+        ))
+        
+        while True:
+            try:
+                user_input = Prompt.ask("\n[bold green]You[/bold green]")
+                
+                if not user_input.strip():
+                    continue
+                
+                # Check for special commands
+                if self.process_command(user_input):
+                    break
+                
+                # Get response from Jarvis (will use voice output)
+                self.respond(user_input)
+                
+            except KeyboardInterrupt:
+                console.print("\n[yellow]Interrupted. Type 'exit' to quit.[/yellow]")
             except Exception as e:
                 console.print(f"[red]Error: {e}[/red]")
 

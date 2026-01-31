@@ -10,6 +10,7 @@ class Settings(BaseSettings):
     OPENAI_API_KEY: Optional[str] = os.getenv("OPENAI_API_KEY")
     VOICE_ID: Optional[str] = os.getenv("VOICE_ID")
     WAKE_WORD: str = os.getenv("WAKE_WORD", "jarvis")
+    MIC_INDEX: Optional[int] = os.getenv("MIC_INDEX")
     
     model_config = SettingsConfigDict(env_file=".env", extra="ignore")
 

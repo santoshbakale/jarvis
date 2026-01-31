@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JARVIS - Virtual Assistant</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Share+Tech+Mono&display=swap"
+        rel="stylesheet">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#00f2ff">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Hardware HUD (Left) -->
+        <div class="side-hud left-hud">
+            <div class="hud-widget hardware">
+                <h3>SYS_LOAD</h3>
+                <div class="stat-bar">
+                    <div id="cpu-bar" class="fill"></div><span>CPU</span>
+                </div>
+                <div class="stat-bar">
+                    <div id="ram-bar" class="fill"></div><span>RAM</span>
+                </div>
+                <div class="stat-bar">
+                    <div id="bat-bar" class="fill"></div><span>BAT</span>
+                </div>
+            </div>
+
+            <div class="hud-widget sensors">
+                <h3>SENS_DATA</h3>
+                <div id="location-info" class="data-val">GPS: LOCKED</div>
+                <div class="sensor-controls">
+                    <button onclick="requestLocation()" class="small-btn">SYNC GPS</button>
+                    <button onclick="triggerFileSelect()" class="small-btn">UP_DATA</button>
+                    <input type="file" id="file-input" style="display: none;" onchange="handleFileUpload(this)">
+                </div>
+            </div>
+        </div>
+
+        <!-- Environmental HUD (Right) -->
+        <div class="side-hud right-hud">
+            <div class="hud-widget environment">
+                <h3>ENV_DATA</h3>
+                <div id="weather-info" class="data-val">TEMP: FETCHING...</div>
+                <div id="news-info" class="data-val">NEWS: LOADING...</div>
+            </div>
+
+            <div class="hud-widget notifications">
+                <h3>SEC_BRIDGE</h3>
+                <div id="notif-list" class="notif-container">
+                    <div class="notif-empty">NO ACTIVE ALERTS</div>
+                </div>
+            </div>
+
+            <div class="theme-selector">
+                <button onclick="changeTheme('alpha')" class="theme-btn active" title="Mark Alpha (Cyan)"></button>
+                <button onclick="changeTheme('mark1')" class="theme-btn mark1" title="Mark I (Red/Gold)"></button>
+                <button onclick="changeTheme('mark2')" class="theme-btn mark2" title="Mark II (Silver)"></button>
+                <button onclick="changeTheme('mark42')" class="theme-btn mark42" title="Mark XLII (Gold)"></button>
+                <button onclick="changeTheme('stealth')" class="theme-btn stealth"
+                    title="Stealth Mode (Violet)"></button>
+                <button onclick="changeTheme('nano')" class="theme-btn nano" title="Nano-Tech (Red)"></button>
+            </div>
+        </div>
+
+        <div class="hologram-viewport">
+            <div class="grid-background"></div>
+            <div class="honeycomb-overlay"></div>
+            <div class="hologram-container">
+                <div class="visualizer-container">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <div class="tech-labels">
+                    <div class="label top-left">DRV_CORE: 98%</div>
+                    <div class="label top-right">TEMP: STABLE</div>
+                    <div class="label bot-left">SYNC: ACTIVE</div>
+                    <div class="label bot-right">v2.0.42</div>
+                </div>
+                <svg class="arc-reactor" viewBox="0 0 500 500">
+                    <!-- Outer Rings -->
+                    <circle class="ring-outer" cx="250" cy="250" r="210" />
+                    <circle class="ring-mid" cx="250" cy="250" r="180" />
+
+                    <!-- Rotating Teeth Outer -->
+                    <g class="teeth-outer">
+                        <rect x="240" y="20" width="20" height="40" />
+                        <rect x="240" y="440" width="20" height="40" />
+                        <rect x="20" y="240" width="40" height="20" />
+                        <rect x="440" y="240" width="40" height="20" />
+                    </g>
+
+                    <!-- Middle Rotating Parts -->
+                    <g class="mid-rotator">
+                        <circle class="mid-circle" cx="250" cy="250" r="130" stroke-dasharray="10 20" />
+                    </g>
+
+                    <!-- Arc Core -->
+                    <circle class="core-glow" cx="250" cy="250" r="60" />
+                    <circle class="core-inner" cx="250" cy="250" r="50" />
+
+                    <!-- Inner Tech detail -->
+                    <g class="inner-tech">
+                        <circle cx="250" cy="250" r="30" stroke-dasharray="2 5" />
+                        <line x1="250" y1="220" x2="250" y2="280" />
+                        <line x1="220" y1="250" x2="280" y2="250" />
+                    </g>
+                </svg>
+            </div>
+        </div> <!-- End of hologram-viewport -->
+
+        <div class="title-container">
+            <div class="title-header">
+                <h1>J A R V I S</h1>
+                <button id="history-toggle" title="View History">📜</button>
+            </div>
+            <p class="tagline">Systems Operational. How may I assist you, Sir?</p>
+        </div>
+
+        <div id="chat-output">
+            <!-- Bot responses will appear here -->
+        </div>
+
+        <div class="input-area">
+            <div class="text-input-wrapper">
+                <input type="text" id="user-input" placeholder="Type your command..." autocomplete="off">
+                <button id="send-btn">
+                    <svg viewBox="0 0 24 24" width="24" height="24">
+                        <path fill="currentColor" d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" />
+                    </svg>
+                </button>
+            </div>
+
+            <button id="voice-btn" class="voice-btn">
+                <span class="mic-icon">🎤</span>
+                <span class="btn-text">Click here to speak</span>
+            </button>
+        </div>
+    </div> <!-- End of container -->
+
+    <div id="history-panel" class="hidden">
+        <div class="history-header">
+            <h3>CONVERSATION ARCHIVE</h3>
+            <button id="close-history">×</button>
+        </div>
+        <div id="history-content">
+            <!-- Full history will be rendered here -->
+        </div>
+    </div>
+
+    <div id="camera-overlay" class="hidden">
+        <div class="camera-container">
+            <h3>VISUAL_SCAN_MODE</h3>
+            <video id="webcam" autoplay playsinline></video>
+            <div class="scan-bar"></div>
+            <button onclick="closeCamera()" class="small-btn">TERMINATE</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
