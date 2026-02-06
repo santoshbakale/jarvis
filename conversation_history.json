@@ -910,5 +910,13 @@
     {
         "sender": "Jarvis",
         "text": "The voice of Jarvis, the virtual assistant, is inspired by the character J.A.R.V.I.S. (Just A Rather Very Intelligent System) from the Marvel Cinematic Universe, particularly the \"Iron Man\" movies. Jarvis is known for his calm, polite, and sophisticated voice, which reflects his advanced artificial intelligence capabilities. In the movies, Jarvis assists Tony Stark (Iron Man) with various tasks, providing information, controlling technology, and offering support through his conversational voice interface. The voice of Jarvis is designed to be reassuring, efficient, and easy to understand, embodying a blend of human-like qualities and advanced technology. If you have any specific questions or need more details about Jarvis's voice or capabilities, feel free to ask!"
+    },
+    {
+        "sender": "User",
+        "text": "dont read notifications stop it"
+    },
+    {
+        "sender": "Jarvis",
+        "text": "I respect your privacy and won't access or read your notifications. If you need any assistance or have any questions, feel free to let me know!"
     }
 ]
